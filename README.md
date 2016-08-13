@@ -2,7 +2,17 @@
 
 *Examples by Prof. Craven*
 
-## Easiest:
+This is a repository of example code
+for [Pololu's Zumo 32U4 robot](https://www.pololu.com/category/170/zumo-32u4-robot).
+Their [user guide is here](https://www.pololu.com/docs/0J63). To get
+started with their robot, download the
+[Arduino compiler](https://www.arduino.cc/en/Main/Software),
+Next install the
+[A-Star support for the Arduino compiler](https://github.com/pololu/a-star).
+(Look down a ways on that page for where to copy things over to install.)
+Finally, ]install the Zumo library](https://www.pololu.com/docs/0J63/6).
+
+## Easiest example:
 
 * [LEDs](LEDs/LEDs.ino) - Learn to blink the three LEDs on the board
 
