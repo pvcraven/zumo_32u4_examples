@@ -10,7 +10,7 @@ started with their robot, download the
 Next install the
 [A-Star support for the Arduino compiler](https://github.com/pololu/a-star).
 (Look down a ways on that page for where to copy things over to install.)
-Finally, ]install the Zumo library](https://www.pololu.com/docs/0J63/6).
+Finally, [install the Zumo library](https://www.pololu.com/docs/0J63/6).
 
 ## Easiest example:
 
