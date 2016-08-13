@@ -1,18 +1,20 @@
-# Prof Craven's example code for Polulu's Zumo 32U4 robot
+# Example code for Polulu's Arduino-based Zumo 32U4 robot
 
-Easiest:
+*Examples by Prof. Craven*
 
-* LEDs - Learn to blink the three LEDs on the board
+## Easiest:
 
-Learn to use the sensors:
+* [LEDs](LEDs/LEDs.ino) - Learn to blink the three LEDs on the board
 
-* ProxSensorExample - Display the values for the proximity sensor on the LCD
-* LineSensorExample - Display the values for the line sensors on the LCD
-* GyroSensorExample - Display robot angle on LCD
+## Learn to use the sensors:
 
-Move the robot:
+* [ProxSensorExample](ProxSensorExample/ProxSensorExample.ino) - Display the values for the proximity sensor on the LCD
+* [LineSensorExample](LineSensorExample/LineSensorExample.ino) - Display the values for the line sensors on the LCD
+* [GyroSensorExample](GyroSensorExample/GyroSensorExample.ino) - Display robot angle on LCD
 
-* MotorDeadReckoning - Move the robot using dead reckoning. (Timing.)
-* MotorEncoders - Move the robot using wheel encoders for more accurate distances.
-* TurnExample - Turn a certain number of degrees using the gyro
+## Move the robot:
+
+* [MotorDeadReckoning](MotorDeadReckoning/MotorDeadReckoning.ino) - Move the robot using dead reckoning. (Timing.)
+* [MotorEncoders](MotorEncoders/MotorEncoders.ino) - Move the robot using wheel encoders for more accurate distances.
+* [TurnExample](TurnExample/TurnExample.ino) - Turn a certain number of degrees using the gyro
 * [HeadingHold](HeadingHold/HeadingHold.ino) - More complex example. Attempts to hold-heading so we drive straight.
