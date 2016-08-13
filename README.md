@@ -15,4 +15,4 @@ Move the robot:
 * MotorDeadReckoning - Move the robot using dead reckoning. (Timing.)
 * MotorEncoders - Move the robot using wheel encoders for more accurate distances.
 * TurnExample - Turn a certain number of degrees using the gyro
-* [HeadingHold](blob/master/HeadingHold/HeadingHold.ino) - More complex example. Attempts to hold-heading so we drive straight.
+* [HeadingHold](HeadingHold/HeadingHold.ino) - More complex example. Attempts to hold-heading so we drive straight.
