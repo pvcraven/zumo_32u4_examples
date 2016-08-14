@@ -153,8 +153,6 @@ void loop() {
   }
   else if (magnitudeSquared > 250000000) {
     state = reverse_state;
-    reverse_distance = 0;
-    reverse_angle = 0;
   }
   else if (state == scan_left_state) {
     if (centerLeftSensor < 4 && centerRightSensor < 4) {
