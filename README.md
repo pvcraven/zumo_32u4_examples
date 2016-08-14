@@ -29,5 +29,6 @@ Finally, [install the Zumo library](https://www.pololu.com/docs/0J63/6).
 * [TurnExample](TurnExample/TurnExample.ino) - Turn a certain number of degrees using the gyro
 * [HeadingHold](HeadingHold/HeadingHold.ino) - More complex example. Attempts to hold-heading so we drive straight.
 
-** Complex examples:
-* MoveAndAvoid - Move the robot around, avoiding obstacles.
+## Complex examples:
+
+* [MoveAndAvoid](MoveAndAvoid/MoveAndAvoid.ino) - Move the robot around, avoiding obstacles.
