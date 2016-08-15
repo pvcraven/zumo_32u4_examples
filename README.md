@@ -18,7 +18,7 @@ Finally, [install the Zumo library](https://www.pololu.com/docs/0J63/6).
 
 ## Learn to use the sensors:
 
-* [ProxSensorExample](ProxSensorExample/ProxSensorExample.ino) - Display the values for the proximity sensor on the LCD
+* [ProxSensorExample](ProxSensorExample/ProxSensorExample.ino) - Display the values for the proximity sensor on the LCD [Video](https://youtu.be/ddPo6HQvxzQ)
 * [LineSensorExample](LineSensorExample/LineSensorExample.ino) - Display the values for the line sensors on the LCD
 * [GyroSensorExample](GyroSensorExample/GyroSensorExample.ino) - Display robot angle on LCD [Video](https://youtu.be/XOp22Xx7ZnU)
 
