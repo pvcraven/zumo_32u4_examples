@@ -1,14 +1,17 @@
-#include <Wire.h>
 #include <Zumo32U4.h>
 
 Zumo32U4LCD lcd;
-Zumo32U4Motors motors;
 Zumo32U4ButtonA buttonA;
+// Documentation for the motors class:
+// http://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_motors.html
+Zumo32U4Motors motors;
 
-const uint16_t motorSpeed = 200;
+const uint16_t motorSpeed = 300;
 
 void setup() {
   lcd.clear();
+  lcd.gotoXY(0, 0);
+  lcd.print("Press A");
 }
 
 void loop() {
@@ -20,17 +23,25 @@ void loop() {
     // Wait
     delay(1000);
 
-    // Move forward for three seconds
+    // Move forward for two seconds
     motors.setSpeeds(motorSpeed, motorSpeed);
-    delay(3000);
+    delay(2000);
 
     // Stop and pause
     motors.setSpeeds(0, 0);
     delay(500);
 
-    // Move backwards three seconds
+    // Move backwards two seconds
     motors.setSpeeds(-motorSpeed, -motorSpeed);
-    delay(3000);
+    delay(2000);
+
+    // Stop
+    motors.setSpeeds(0, 0);
+    delay(500);
+
+    // Turn left
+    motors.setSpeeds(-motorSpeed, motorSpeed);
+    delay(1000);    
 
     // Stop
     motors.setSpeeds(0, 0);

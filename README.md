@@ -24,7 +24,7 @@ Finally, [install the Zumo library](https://www.pololu.com/docs/0J63/6).
 
 ## Move the robot:
 
-* [MotorDeadReckoning](MotorDeadReckoning/MotorDeadReckoning.ino) - Move the robot using dead reckoning. (Timing.)
+* [MotorDeadReckoning](MotorDeadReckoning/MotorDeadReckoning.ino) - Move the robot using dead reckoning. (Timing.) [Video](https://youtu.be/k2DDa9nwVx0)
 * [MotorEncoders](MotorEncoders/MotorEncoders.ino) - Move the robot using wheel encoders for more accurate distances.
 * [TurnExample](TurnExample/TurnExample.ino) - Turn a certain number of degrees using the gyro
 * [HeadingHold](HeadingHold/HeadingHold.ino) - More complex example. Attempts to hold-heading so we drive straight.
