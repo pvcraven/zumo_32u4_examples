@@ -14,7 +14,7 @@ Finally, [install the Zumo library](https://www.pololu.com/docs/0J63/6).
 
 ## Easiest example:
 
-* [LEDs](LEDs/LEDs.ino) - Learn to blink the three LEDs on the board
+* [LEDs](LEDs/LEDs.ino) - Learn to blink the three LEDs on the board. [Video](https://youtu.be/7KgZUn8ATDQ)
 
 ## Learn to use the sensors:
 

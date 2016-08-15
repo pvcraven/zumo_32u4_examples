@@ -1,11 +1,17 @@
 #include <Zumo32U4.h>
 
-// Used to control the LCD display
-// Documentation: http://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_l_c_d.html
-// (Note that this inherits from Arduino's serial print class: https://www.arduino.cc/en/Serial/Print)
+// Video explanation: https://youtu.be/7KgZUn8ATDQ
+
+// This object is used to control the LCD display.
+// Documentation on the class is here:
+// http://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_l_c_d.html
+// Note that this class also inherits methods from Arduino's serial print class:
+// https://www.arduino.cc/en/Serial/Print
 Zumo32U4LCD lcd;
 
-// This is called when we are reprogrammed, when we have power-up, or when reset is hit
+// The setup method is a 'special' method that is automatically
+// called when we are reprogrammed, when we have power-up, or when reset is hit.
+// The method must be called exactly setup(), or it will not be called.
 void setup() {
   // Clear the LCD screen
   lcd.clear();
@@ -19,7 +25,9 @@ void setup() {
   lcd.print("Example");
 }
 
-// This function is called over and over again
+// This 'loop' method is also a 'special' function.
+// This function is called over and over by the Arduino until power-off or
+// reset.
 void loop() {
   // Turn on the red LED, and turn off the others
   // Documentation on these functions:
@@ -45,7 +53,7 @@ void loop() {
   ledRed(0);
   ledYellow(0);
   ledGreen(1);
-  
+
   // Wait one second
   delay(1000);
 }

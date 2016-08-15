@@ -97,17 +97,17 @@ void loop() {
     delay(1000);
 
     turnLeft(90);
-    delay(500);  
+    delay(500);
 
     motors.setSpeeds(motorSpeed, motorSpeed);
-    delay(1000);          
+    delay(1000);
 
     turnLeft(90);
-    delay(500);  
+    delay(500);
 
     motors.setSpeeds(motorSpeed, motorSpeed);
-    delay(2000);         
-    
+    delay(2000);
+
     turnRight(180);
   }
 
