@@ -1,14 +1,21 @@
-#include <Wire.h>
+// Example on how to read from the gyrometer
+// built into the Pololu Zumo 32U4 Arduino-based robot.
+
 #include <Zumo32U4.h>
 #include "TurnSensor.h"
 
-Zumo32U4LCD lcd;
 L3G gyro;
-Zumo32U4ButtonA buttonA;
+Zumo32U4LCD lcd;
 
-// Sensor values will go in here
-unsigned int lineSensorValues[3];
+// --- Helper functions
+int32_t getAngle() {
+  // turnAngle is a variable defined in TurnSensor.cpp
+  // This fancy math converts the number into degrees turned since the
+  // last sensor reset.
+  return (((int32_t)turnAngle >> 16) * 360) >> 16;
+}
 
+// --- Setup Method
 void setup() {
   turnSensorSetup();
   delay(500);
@@ -16,13 +23,16 @@ void setup() {
   lcd.clear();
 }
 
+// --- Main program loop
 void loop() {
+  
+  // Read the sensors
   turnSensorUpdate();
+  int32_t angle = getAngle();
 
+  // Update the display
   lcd.gotoXY(0, 0);
-  int angle = (((int32_t)turnAngle >> 16) * 360) >> 16;
   lcd.print(angle);
-    
   lcd.print(" ");
-
 }
+
