@@ -31,4 +31,4 @@ Finally, [install the Zumo library](https://www.pololu.com/docs/0J63/6).
 
 ## Complex examples:
 
-* [MoveAndAvoid](MoveAndAvoid/MoveAndAvoid.ino) - Move the robot around, avoiding obstacles.
+* [MoveAndAvoid](MoveAndAvoid/MoveAndAvoid.ino) - Move the robot around, avoiding obstacles. [Video](https://youtu.be/mv8Kxi9K_sY)

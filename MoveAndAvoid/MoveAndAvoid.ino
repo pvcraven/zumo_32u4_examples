@@ -1,6 +1,9 @@
 /*
  * Move and avoid example
+ *
+ * Video Explanation: https://youtu.be/mv8Kxi9K_sY
  */
+
 // --- Includes ---
 
 #include <Wire.h> // Used for Accelerometer
