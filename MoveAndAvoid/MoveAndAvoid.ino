@@ -1,6 +1,9 @@
+/*
+ * Move and avoid example
+ */
 // --- Includes ---
 
-#include <Wire.h>
+#include <Wire.h> // Used for Accelerometer
 #include <Zumo32U4.h>
 #include "TurnSensor.h"
 
@@ -10,11 +13,12 @@ Zumo32U4LCD lcd;
 Zumo32U4ProximitySensors proxSensors;
 Zumo32U4ButtonA buttonA;
 Zumo32U4Motors motors;
-LSM303 lsm303;
+LSM303 lsm303; // Accelerometer
 L3G gyro;
 
 // --- Enums ---
 
+// This enum is used for our "state machine."
 enum State {
   pause_state,
   forward_left_state,
@@ -29,11 +33,12 @@ enum State {
 
 const uint16_t motorSpeed = 350;
 const uint16_t turnSpeed = 200;
+const int acceleration = 2;
 
 // --- Global Variables ---
+
 State state = pause_state;
 int curSpeed = 0;
-int acceleration = 2;
 
 // --- Support Functions ---
 
@@ -68,6 +73,8 @@ void turnRight(int degrees) {
   } while (angle > -degrees);
   motors.setSpeeds(0, 0);
 }
+
+// Stop
 void stop() {
   motors.setSpeeds(0, 0);
 }
@@ -109,11 +116,16 @@ void forwardRight() {
 
 // --- Setup ---
 void setup() {
-  // put your setup code here, to run once:
+
+  // Proximity sensors
   proxSensors.initThreeSensors();
+
+  // Accelerometer
   Wire.begin();
   lsm303.init();
   lsm303.enableDefault();
+
+  // Gyrometer
   turnSensorSetup();
   delay(500);
   turnSensorReset();
