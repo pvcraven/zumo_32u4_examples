@@ -41,4 +41,5 @@ then search for "Zumo" and install the library.
 
 ## Complex examples:
 
+* [SumoExample](SumoExample/SumoExample.ino) - Very unintelligent Sumo robot.
 * [MoveAndAvoid](MoveAndAvoid/MoveAndAvoid.ino) - Move the robot around, avoiding obstacles. [Video](https://youtu.be/mv8Kxi9K_sY)
