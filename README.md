@@ -12,6 +12,16 @@ Next install the
 (Look down a ways on that page for where to copy things over to install.)
 Finally, [install the Zumo library](https://www.pololu.com/docs/0J63/6).
 
+## Software setup
+
+For help in getting a computer set up with the Zumo robot, see
+[this video](https://youtu.be/L6iX8ZJ6nNo). You'll need:
+
+* [Arduino Compiler](https://www.arduino.cc/en/Main/Software)
+* [Driver support](https://www.pololu.com/docs/0J63/all#5.1) Install drivers and copy over the Pololu hardware folder
+* From the Arduino compiler, go to Sketch...Include Library...Manage Libraries,
+then search for "Zumo" and install the library.
+
 ## Easiest example:
 
 * [LEDs](LEDs/LEDs.ino) - Learn to blink the three LEDs on the board. [Video](https://youtu.be/7KgZUn8ATDQ)
